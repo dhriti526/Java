@@ -1,0 +1,32 @@
+class Main {
+  public int nonrep(String str)
+  {
+    for(int i=0;i<str.length();i++)
+    {
+      str.charAt(i)++;
+    }
+        for(int i=0;i<str.length();i++)
+
+      if(str.charAt(i)!=str.charAt(i+1))
+      {
+        return i;
+      }
+      else
+      i++;
+    } 
+  public static void main(String[] args) /*{
+    // Write your code here...
+   String str=new String();
+   str="letocode";
+   Main s=new Main();
+   s.nonrep();
+  }
+}*/
+{
+  Scanner sc=new Scanner(System.in);
+  String str=sc.nextLine();
+
+  Main s=new Main();
+   s.nonrep();
+}
+}
