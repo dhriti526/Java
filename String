@@ -1,18 +1,21 @@
+//first non-repeating character and return it's index
+import java.util.*;
 class Main {
+  int i=0,j=0;
   public int nonrep(String str)
   {
-    for(int i=0;i<str.length();i++)
+    for( i=0;i<str.length();i++)
     {
-      str.charAt(i)++;
+      str.charAt(i++);
     }
-        for(int i=0;i<str.length();i++)
+        for(i=0;i<str.length();i++)
 
       if(str.charAt(i)!=str.charAt(i+1))
       {
         return i;
       }
-      else
       i++;
+      return -1;
     } 
   public static void main(String[] args) /*{
     // Write your code here...
@@ -27,6 +30,6 @@ class Main {
   String str=sc.nextLine();
 
   Main s=new Main();
-   s.nonrep();
+   System.out.println(s.nonrep(str));
 }
 }
