@@ -35,7 +35,7 @@ public class MyClass {
 
 
 
-//2 Method to find number of subarrays of size m whose sum of elements is d//
+//2 Method to find number of subarrays of size m whose sum of elements is d//in class//
 static void numberOfSubArrays(int[] arr,int n, int d, int m){
        int count = 0;
        int sum = 0;
