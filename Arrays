@@ -1,8 +1,8 @@
-//1 google dox//
+//google.dox//
 import java.util.*;
 public class MyClass {
     int j;
-    public void comp(){
+    public void comp(int n,int[] a){
     for(int i=0;i<n-1;i++)
     {
         if(a[i]!=a[i+1])
@@ -19,11 +19,13 @@ public class MyClass {
     {
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
+        for(int i=0;i<n;i++)
+        {
         int a=sc.nextInt();
-        int[] a=new int [n];
+        }
         int[] temp=new int [100];
         MyClass cc=new MyClass();
-        cc.comp();
+        cc.comp(n,a);
     }
 }
 
