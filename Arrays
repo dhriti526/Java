@@ -1,4 +1,4 @@
-//google.dox//
+//1_google.dox//
 import java.util.*;
 public class MyClass {
     int j;
@@ -28,6 +28,27 @@ public class MyClass {
         cc.comp(n,a);
     }
 }
+
+
+
+
+
+//2_googledox//
+class Solution {
+    public void rotate(int[] nums, int k) {
+        int n=nums.length;
+        for(int i=0;i<n-k;i++)
+        {
+            nums[i]=nums[i+k];
+       }
+        nums[0]=nums[n-k];
+        nums[1]=nums[n-k+1];
+        nums[2]=nums[n-k+2];
+    }
+}
+
+
+
 
 
 
