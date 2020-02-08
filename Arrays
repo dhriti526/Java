@@ -19,9 +19,11 @@ public class MyClass {
     {
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
-        for(int i=0;i<n;i++)
+        int a[]=new int[n];
+        int i;
+        for(i=0;i<n;i++)
         {
-        int a=sc.nextInt();
+        int a[i]=sc.next();
         }
         int[] temp=new int [100];
         MyClass cc=new MyClass();
@@ -33,17 +35,40 @@ public class MyClass {
 
 
 
+
+
 //2_googledox//
-class Solution {
-    public void rotate(int[] nums, int k) {
-        int n=nums.length;
-        for(int i=0;i<n-k;i++)
-        {
-            nums[i]=nums[i+k];
-       }
-        nums[0]=nums[n-k];
-        nums[1]=nums[n-k+1];
-        nums[2]=nums[n-k+2];
+import java.util.*;
+ class rotate
+{
+   void rotateleft(int arr[],int d,int n)
+  {
+    for(int i=0;i<k;i++)
+    {
+      rotateOne(arr,n);
+    }
+     void rotateOne(int arr[],int n)
+    {
+      int temp;
+      temp=arr[0];
+      for(int i=0;i<n;i++)
+      {
+        arr[i]=arr[i+1];
+        arr[i]=temp;
+      }
+     void display(int arr[], int n)
+      {
+        for(int i=0;i<n;i++)
+        Syatem.out.println(arr[i]);
+      }
+    }
+  }   
+    public static void main(String args[]) 
+    {
+      rotate r=new rotate();
+      int arr={1,2,3,4,5,6,7};
+      r.rotateleft(arr,3,7);
+      r.display(arr,7);
     }
 }
 
