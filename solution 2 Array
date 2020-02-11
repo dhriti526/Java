@@ -1,0 +1,29 @@
+// Welcome to SpiderLabWeb
+// Online Java Compiler
+
+class Main {
+  public void rotate(int arr[],int k,int n)
+  int j=0;
+  for(int i=0;i<k;i++)
+  {
+    int temp=arr[n-1];
+    for(j=n;j>0;j--)
+    {
+      arr[j]=arr[j-1];
+    }
+    arr[j]=temp;
+  }
+  
+  public static void main(String[] args) { 
+  Scanner sc=new Scanner(System.in);
+  int k=sc.nextInt();
+  int n=sc.nextInt();
+  int [] arr=new int [n];
+  for(int i=0;i<n;i++)
+  {
+    arr=sc.nextInt();
+  }
+  Main r=new Main();
+  r.rotate(k,n,arr);
+  }
+}
