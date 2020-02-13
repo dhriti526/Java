@@ -31,3 +31,22 @@ class Main {
    System.out.println(s.nonrep(str));
 }
 }
+
+
+
+
+//patter checking//
+import java.util.*;
+class patternCheck{
+  	public static void main(String args[])
+	{
+		String str1="dhriti";
+		String str2="ritidh";
+		String result=str1.concat(str1);
+		if(result.contains(str2))
+		System.out.println("yes");
+		else
+		System.out.println("no");
+
+	}
+}
