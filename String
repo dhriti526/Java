@@ -69,3 +69,28 @@ public static void main(String[] args)
 		System.out.print("NO");
 	}
 	}
+	
+	
+	
+
+
+
+//hi in 1st and 2nd index//
+import java.util.*;
+class hihello
+{
+	public static void main(String args[])
+	{
+		String str1="hello";
+		char[] ch=str1.toCharArray();
+		for(int i=0;i<ch.length;i++)
+		{
+		if((ch[0]=='h')&&(ch[1]==i))
+		System.out.print(str1);
+		else
+		System.out.print("hi"+str1);
+		break;
+	}
+	}
+}
+
