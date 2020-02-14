@@ -50,3 +50,22 @@ class patternCheck{
 
 	}
 }
+
+
+
+//patern check//
+import java.util.*;
+class patternCheck{
+public static void main(String[] args)
+	{
+		String str1="dhriti";
+		String str2="ritidh";
+	
+		String result;
+		result=str1.concat(str1);
+		if(result.contains(str2))
+		System.out.print("YES");
+		else
+		System.out.print("NO");
+	}
+	}
